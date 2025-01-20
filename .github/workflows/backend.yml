@@ -53,7 +53,7 @@ jobs:
         # 4. 현재 위치 목록
         #    build ... src
         # 5. 빌드된 산출물의 목록 확인
-        #    demo-deploy-0.0.1-SNAPSHOT-plain.jar ...
+        #    demo-deploy-0.0.1-SNAPSHOT-plain.jar ..
         run: |
           chmod +x ./gradlew
           ./gradlew clean build
