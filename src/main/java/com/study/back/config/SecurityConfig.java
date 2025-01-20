@@ -38,7 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 로그인 처리 엔드 포인트(URL만 설정)로 지정, 실처리는  CustomUserDetailsService 에서 처리
                 .loginProcessingUrl("/loginCheck")
                 .usernameParameter("email")         // form에서 email을 전달하여 로그인 처리, 비번도 표기해도 되나 통상 password 사용
-                // 로그인 성공하면 응답처리용
+                // 로그인 성공하면 응답처리용.
                 .defaultSuccessUrl("/loginSuccess")
                 .and()
                 .logout() // 로그아웃 설정
